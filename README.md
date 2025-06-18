@@ -22,7 +22,8 @@ A simple student management web application built with **PHP**, **MySQL**, **HTM
 
 ## 🖼️ Screenshot
 
-c:\Users\soult\OneDrive\Pictures\Screenshots\Screenshot 2025-06-18 013347.pnggit add README.md
+![Dashboard Page Screenshot](images/dashboard.png)
+
 
 ---
 
