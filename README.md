@@ -77,6 +77,8 @@ Move the project to your XAMPP `htdocs/` folder.
 ├── style.css
 ├── uploads/            # Contains uploaded student photos
 │   └── .gitkeep        # Keeps folder tracked by Git even if empty
+├── images/             # Contains images
+│   └── dashboard.png   
 ```
 
 ---
