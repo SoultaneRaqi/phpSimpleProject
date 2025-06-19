@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if($remember) {
                 $cookie_value = $user['id'] . ':' . $user['username'];
-                $expiry = time() + 60 * 60 * 24 * 30; // 30 days
+                $expiry = time() + 3600; 
                 setcookie('remember_me', $cookie_value, $expiry, '/');
             }
             
