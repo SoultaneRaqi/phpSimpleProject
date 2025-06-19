@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Empty values!!!");
     }
     $update = $pdo->prepare("UPDATE students SET name = ?, email = ?, age = ?, photo = ? WHERE id = ?");
-    $update->execute([$name, $email, $age, $id , $newPhoto]);
+    $update->execute([$name, $email, $age,  $newPhoto , $id]);
 
     header("Location: index.php");
     exit();
