@@ -15,8 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      if (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0) {
         $uploadDir = 'uploads/';
         if (!is_dir($uploadDir)) mkdir($uploadDir); // create if not exists
-
+        
         $tmpName = $_FILES['photo']['tmp_name'];
+
+        $originalName=basename($_FILES['photo']['name']);
+        $extension = pathinfo($originalName, PATHINFO_EXTENSION); 
+
+        
         $photoName = time() . '_' . basename($_FILES['photo']['name']);
         move_uploaded_file($tmpName, $uploadDir . $photoName);
     }
